@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.App {
+    background-image: url('../public/Weather-Images-HD.jpg');
+    width: 100%;
+    height: 800px;
+
+}
+.weather-update {
+    /* background-image: url('../public/nature.jpg'); */
+    z-index: 0;
+    width:75%;
+    height:700px;
+    border-radius: 3%;
+    position: absolute;
+    left: 13%;
+    margin-top: 4%;
+    font-size: large;
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    transition: border-color 0.5s ease-in-out;
+    animation: border-color-change 5s infinite linear;
+
+}
+@keyframes border-color-change {
+    0% {
+      border-color: red;
+    }
+    25% {
+      border-color: blue;
+    }
+    50% {
+      border-color: green;
+    }
+    75% {
+      border-color: yellow;
+    }
+    100% {
+      border-color: red;
+    }
+  }
+
+@media (width:600px) {
+    .App {
+        height: 1000px;
+    }
+}
+
+
